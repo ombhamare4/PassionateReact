@@ -8,6 +8,4 @@ const store = configureStore({
   },
 });
 
-export const uiAction = uiSlice.action;
-
 export default store;
