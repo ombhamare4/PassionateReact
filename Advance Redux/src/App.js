@@ -27,7 +27,10 @@ function App() {
         }),
       );
       try {
-        const response = await axios.put({ firebase_url_put_here }, cart);
+        const response = await axios.put(
+          {firebase_url}
+          cart,
+        );
         if (response.status === 200) {
           dispatch(
             uiAction.showNotification({
